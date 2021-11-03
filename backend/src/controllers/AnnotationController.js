@@ -12,18 +12,15 @@ module.exports = {
     //criando atravéz de inserir dados
      async create(request, response){ 
         const { title, notes, priority } = request.body;
-
         //validação para evitar erros
         if(!notes || !title){
             return response.status(400).json({ error: 'Necessário um titulo/anotação'})
         }
-
         const annotationCreated = await Annotations.create({
             title,
             notes,
             priority
         });
-
         return response.json(annotationCreated);
     },
 
@@ -37,7 +34,6 @@ module.exports = {
             return response.json(annotationDeleted)
         }
         return response.status(401).json({error: 'Não foi encontrado o registro para deletar'});
-
     }
 
 
