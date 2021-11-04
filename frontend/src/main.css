@@ -10,6 +10,14 @@ main ul {
     list-style: none;
 }
 
+
+/* tornando responsivo */
+    @media(max-width: 600px){ 
+        /* em 600px deixar apenas card abaixo de card */
+        main ul {grid-template-columns: 1fr;}
+    }
+/*  */
+
 li.notepad-infos div {
     display: flex;
     justify-content: space-between;

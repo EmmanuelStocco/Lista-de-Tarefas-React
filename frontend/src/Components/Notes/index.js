@@ -1,67 +1,19 @@
 import React from 'react';
 
-function Notes() {
+function Notes({ data }) {
     return (
         <>
-               <li class="notepad-infos">
+          <li class="notepad-infos">
               <div> 
-                <strong> Fazer Compras </strong>
+                <strong>{data.title}</strong>
                 <div>
                   x
                 </div>
               </div>
 
-              <textarea> Lorem inpassansa pasoksaosaksoakasp </textarea> 
+              <textarea defaultValue={data.notes}></textarea> 
               <span> ! </span>
-            </li>
-
-             <li class="notepad-infos">
-              <div> 
-                <strong> Fazer Compras </strong>
-                <div>
-                  x
-                </div>
-              </div>
-
-              <textarea> Lorem inpassansa pasoksaosaksoakasp </textarea> 
-              <span> ! </span>
-            </li>
-
-             <li class="notepad-infos">
-              <div> 
-                <strong> Fazer Compras </strong>
-                <div>
-                  x
-                </div>
-              </div>
-
-              <textarea> Lorem inpassansa pasoksaosaksoakasp </textarea> 
-              <span> ! </span>
-            </li>
-
-             <li class="notepad-infos">
-              <div> 
-                <strong> Fazer Compras </strong>
-                <div>
-                  x
-                </div>
-              </div>
-
-              <textarea> Lorem inpassansa pasoksaosaksoakasp </textarea> 
-              <span> ! </span>
-            </li>
-
-             <li class="notepad-infos">
-              <div> 
-                <strong> Fazer Compras </strong>
-                <div>
-                  x
-                </div>
-              </div>
-
-              <textarea> Lorem inpassansa pasoksaosaksoakasp </textarea> 
-              <span> ! </span>
-            </li>
+           </li>
         </>
     )
 }

@@ -10,6 +10,6 @@ app.use(cors());
 app.use(express.json()); 
 app.use(routes);
 
-let porta = 3000;
+let porta = 8080;
 app.listen(porta);
-console.log('Sistema rodando na porta' + porta);
+console.log('Sistema rodando na porta ' + porta);
