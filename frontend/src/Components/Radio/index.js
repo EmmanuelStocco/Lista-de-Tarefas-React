@@ -12,22 +12,22 @@ function RadioButton(){
     })((props) => <Radio color="default" {...props} />);
 
     return(
-       <>
-            <div className="radioOptions">
+       <div className="radioOptions">
+            <div>
                 <CustomRadio />
                 <span>Todos</span>
             </div>
 
-            <div className="radioOptions">
+            <div>
                 <CustomRadio />
-                <span>Todos</span>
+                <span>Prioridade</span>
             </div>
 
-            <div className="radioOptions">
+            <div>
                 <CustomRadio />
-                <span>Todos</span>
+                <span>Normal </span>
             </div>
-        </>
+        </div>
     )
 }
 
